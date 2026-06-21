@@ -1,0 +1,210 @@
+.star-rating{
+  display: flex;
+}
+
+.star{
+  appearance: none;
+  padding: 1px;
+}
+
+.star::after{
+  content:'☆';
+  color:black;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.star:hover::after,
+.star:has(~.star:hover)::after,
+.star:checked::after,
+.star:has(~.star:checked)::after{
+  content:'★';
+}
+
+.star:hover~.star::after{
+  content:'☆';
+}
+
+@font-face {
+  font-family: 'Dovemayo_gothic';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+body {  font-family: 'Dovemayo_gothic';
+  flex-direction: column;
+}
+
+
+.wpahr{
+  width: 100px;
+  height:fit-content;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  height: 50px;
+  justify-content: center;
+  align-self: center;
+}
+
+label[for="date"] {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+
+input{
+  background-color: transparent;
+  border: none;
+  font-family: 'Dovemayo_gothic';
+  font-size: 16px;
+}
+
+input.submit{
+  font-size: 16px;
+  padding:0px;
+  border: 1px solid black;
+}
+
+
+
+select{
+  background-color: transparent;
+  border: none;
+  font-family: 'Dovemayo_gothic';
+  font-size: 16px;
+
+}
+textarea#texts{
+  padding:10px
+  }
+button{
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  size: 10px;
+  border: 2px solid;
+}
+
+
+
+.controls {
+  margin-left: 20px;
+}
+
+.controls {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  height: 100px;
+  width: 300px;
+}
+
+.design{
+display: flex;
+}
+
+.controls .controls__btns {
+  margin-bottom: 5px;
+  writing-mode: vertical-lr;
+}
+
+.controls__btns button{
+  all: unset;
+  cursor: pointer;
+  background-color: white;
+  padding: 5px 0px;
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  color:rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 12px;
+  margin-top: 5px;
+  
+}
+
+#jsRange{
+  margin-left: 30px;
+}
+
+.controls__btns button:active {
+  transform: scale(0.98);
+}
+
+
+
+.controls__range{
+  margin-bottom: 15px;
+  display: flex;
+  vertical-align: center;
+}
+
+
+#jsMode{
+  margin-right: 15px;
+}
+
+
+div#title {
+  font-size:  20px;
+  border: 2px solid black;
+  border-bottom: none;
+  width: 540px; 
+}
+
+textarea{
+  border: 2px solid black;
+  font-family: 'Dovemayo_gothic';
+  background-color: transparent;
+  text-decoration: underline;
+  text-underline-offset: 16px;
+  line-height: 50px;
+
+}
+
+/* 버튼 */
+.btn-upload {
+  width: 150px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid rgb(77,77,77);
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+  background: rgb(77,77,77);
+  color: #fff;
+  }
+}
+
+intpu#file {
+  display: none;
+}
+
+.submit, .cancel, .btn-upload {
+  margin-top: 4px;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn-upload{
+  text-align: center;
+}
+
+.button-save{
+  float: right;
+}
+

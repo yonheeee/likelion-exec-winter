@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'HSDuggobi';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406@1.0/HSDuggobi.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Dovemayo_gothic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  header h1{
+    margin-left: 20px;
+}
+
+header h1 span {
+    margin-left: 8%;
+    font-size: 20px;
+    font-family: 'HSDuggobi',sans-serif;
+}
+.background-skyblue {
+    background-color: black;
+}
+
+.fa-calendar {
+    color: black;
+    font-size: 40px;
+    margin: -30px -7% 0 55px;
+    vertical-align: middle;
+}
+
+.background-white {
+  width: 97%;
+  height: 97%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 2%;
+}
+
+.board-container {
+  font-family: 'Dovemayo_gothic',sans-serif;;
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid black;
+  text-align: left;
+}
+th {
+  color: black;
+}
+
+.memoirs-body tr:hover {
+  background: #f1f1f1;
+  cursor: pointer;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.pagination a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+header    >    h1    >    span    {color:    black;    font-size:    35px;    font-weight:    500;    vertical-align:   
+  bottom;}
+  
+

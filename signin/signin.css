@@ -1,0 +1,268 @@
+@font-face {
+  font-family: 'Dovemayo_gothic';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+  html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dovemayo_gothic', sans-serif;
+  }
+  
+  h1 {
+    font-family: 'Dovemayo_gothic';
+    margin: 0;
+  
+  }
+  
+  h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color:white;
+    padding:5px 0px 5px 0px;
+  }
+  
+  .signup-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: -20px;
+  }
+  
+  .signup-title i {
+    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  
+  h3{
+    font-size: 25px;
+  }
+  
+  button{
+    font-size: 18px;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  #loginbutton{
+    font-size: 18px;
+  }
+  
+  
+  /* 배경 */
+  #main{
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #contents {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+  }
+  
+  #contents h1 {
+    font-family: 'Dovemayo_gothic', sans-serif;
+    font-size: 80px;
+    -webkit-text-stroke: 1.5px #23a7db;
+    margin-bottom: 16px;
+    color:white;
+    font-family: 'KCCMrukmuruk',sans-serif;
+  }
+  
+  
+  /* 크기변화 */
+  @media(max-width:769px) {
+    #contents h1 {
+      font-size: 50px;
+    }
+  
+    #contents p {
+      font-size: 20px;
+  
+    }
+  
+    #contents a {
+      font-size: 14px;
+    
+  }
+  }
+  /* 로그인 */
+  body {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+    position: relative;
+  }
+  
+  
+  form {
+    width: 350px;
+    padding: 20px 0px 20px 20px;
+    border: 1px rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: white;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  
+  input[type="submit"]
+  {
+    margin: 0 auto;
+    width: 310px;
+    padding: 10px;
+    background-color:black;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    color:black;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color:black;
+    transition: background-color 0.5s; 
+    font-family: 'Dovemayo_gothic', sans-serif;
+  
+  }
+  
+  input[type="button"]:hover {
+    background-color: white;
+  }
+  
+  .modal-content::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("mainpic2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5); 
+  
+  }
+  
+  .container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: none;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  form input[type="text"],
+  form input[type="password"] {
+    width: 85%;
+    padding: 5px;
+    margin-top: 5px;
+    
+  }
+  /* 회원가입 버튼 */
+  form input[type="button"],
+  button {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s; 
+    font-family: 'Dovemayo_gothic', sans-serif;
+  }
+  
+  
+  button#signup-button:hover {
+    background-color: white;
+  }
+  
+  /* 모달창 */
+  .modal {
+    display: none;
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: white;
+  }
+  
+  
+  .modal-content {
+    background-color: white;
+    margin: 200px auto;
+    padding: 20px;
+    border: 5px double black;
+    max-width: 350px; /* 최대 너비 설정 */
+    width: 80%; /* 모달 창의 너비 조정 */
+    max-height: 80vh; /* 최대 높이 설정 */
+    border-radius: 15px;
+  }
+  .close {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

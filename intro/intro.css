@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'HSDuggobi';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406@1.0/HSDuggobi.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dovemayo_gothic';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#contents {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+  }
+
+
+#contents h1 {
+   font-family: 'HSDuggobi',sans-serif;
+    font-size: 80px;
+    -webkit-text-stroke: 1.5px black;
+    margin-bottom: 16px;
+    color:white;
+  }
+
+  #contents button {
+    color:white;
+    display: inline-block;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s;
+    width: auto;
+    font-family: 'Dovemayo_gothic',sans-serif;
+  }
+  #contents button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+  }
+
+  @media(max-width:769px) {
+    #contents h1 {
+      font-size: 50px;
+    }
+  
+    #contents p {
+      font-size: 20px;
+  
+    }
+  
+    #contents a {
+      font-size: 14px;}
+    }
